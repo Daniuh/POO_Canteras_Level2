@@ -23,11 +23,11 @@ public class Course {
         this.price = price;
     }
 
-    private String getDuration() {
+    protected String getDuration() {
         return duration;
     }
 
-    private void setDuration(String duration) {
+    protected void setDuration(String duration) {
         this.duration = duration;
     }
 
