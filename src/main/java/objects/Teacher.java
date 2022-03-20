@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Teacher {
     public String nameTeacher;
-    private int age;
+    private Integer age;
     private String courseCharge;
     protected double salary;
     private Date admissionDate;
@@ -35,9 +35,12 @@ public class Teacher {
         this.salary = salary;
     }
 
+    public Teacher() {
+        this.condition = true;
+    }
+
     private void state(){
-        condition = false;
-        if (condition = true){
+        if (condition){
             System.out.println("El profesor esta en estado: Activo");
         }else{
             System.out.println("El profesor esta en estado: Inactivo");

@@ -4,7 +4,7 @@ public class Course {
     public String nameCourse;
     protected String nameTeacher;
     private String duration;
-    public int levelComplexity;
+    public double levelComplexity;
     protected double price;
 
     public String getNameCourse() {
@@ -31,8 +31,12 @@ public class Course {
         this.duration = duration;
     }
 
+    public Course(){
+        this.levelComplexity = 8;
+    }
+
     private void complexityMessage(){
-        if(levelComplexity > 7 && levelComplexity <= 10){
+        if(levelComplexity > 6.5 && levelComplexity <= 10){
             System.out.println("El nivel de complejidad de este curso es: Avanzado");
         }else{
             System.out.println("El nivel de complejidad de este curso es: Basico");
